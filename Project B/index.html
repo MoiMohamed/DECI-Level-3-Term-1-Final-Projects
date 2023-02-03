@@ -1,1 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DECI Math</title>
+    <link rel="icon" href="./static/images/favicon.ico">
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="./static/css/default.css" id="css-theme">
 
+    <script src="./static/js/script.js"></script>
+
+</head>
+<body>
+    <header>
+        <section class="header-box">
+            <img id="header-img1" class="header-img" src="./static/images/default1.png">
+            <span class="header-title">DECI MATH</span>
+            <img id="header-img2" class="header-img" src="./static/images/default2.png">
+        </section>
+    </header>
+    <main>
+        <section class="login-box">
+            <span class="login-title">LOGIN</span>
+
+            <form action="javascript:void(0);" method="post" name="login-form" class="login-form" onsubmit="return validate_login();">
+                <input name="name" class="login-input" type="text" placeholder="Name" autocomplete="off">
+                <input name="age" class="login-input" type="number" placeholder="Age" autocomplete="off">
+                <select name="fav-theme" class="login-select">
+                    <option disabled selected>Favourite Theme</option>
+                    <option value="default">Default</option>
+                    <option value="space">Space</option>
+                    <option value="tom">Tom & Jerry</option>
+                    <option value="bears">Three Bare Bears</option>
+                </select>
+                <input class="login-submit" type="submit">
+            </form>
+        </section>
+        
+        <section class="kidCalc-box">
+            <section class="information-box">
+                <span id="info-name">Welcome Abbas!</span>
+                <span id="info-score">Solved Problems: 0</span>
+            </section>
+
+            <section class="calc-text-box">
+                <div id="inp-box-1" class="calc-input"></div>
+                <button id="plus" class="opr-butt" onclick="choose_operation('+')">+</button>
+                <button id="minus" class="opr-butt" onclick="choose_operation('-')">-</button>
+                <button id="less" class="opr-butt" onclick="choose_operation('<')">&lt;</button>
+                <button id="greater" class="opr-butt" onclick="choose_operation('>')">></button>  
+                <div  id="inp-box-2" class="calc-input"></div>
+                <button id="equal" class="opr-butt" onclick="choose_operation('=')">=</button>
+                <input class="ans-box" type="number" placeholder="Answer Here">
+                <button class="check-butt" onclick="check();">Check</button>
+                <button class="clear-butt" onclick="clear_inp();">Clear</button>
+            </section>
+            
+            <section class="calc-butt-box">
+                <button class="num-butt" id="butt-1" onclick="number_pad(1);">1</button>
+                <button class="num-butt" id="butt-2" onclick="number_pad(2);">2</button>
+                <button class="num-butt" id="butt-3" onclick="number_pad(3);">3</button>
+                <button class="num-butt" id="butt-4" onclick="number_pad(4);">4</button>
+                <button class="num-butt" id="butt-5" onclick="number_pad(5);">5</button>
+                <button class="num-butt" id="butt-6" onclick="number_pad(6);">6</button>
+                <button class="num-butt" id="butt-7" onclick="number_pad(7);">7</button>
+                <button class="num-butt" id="butt-8" onclick="number_pad(8);">8</button>
+                <button class="num-butt" id="butt-9" onclick="number_pad(9);">9</button>
+                <button class="num-butt" id="butt-0" onclick="number_pad(0);">0</button>
+            </section>
+
+            <img id="great-job" src="./static/images/Great_job.png" alt="Great Job">
+            <img id="try" src="./static/images/try.webp" alt="Try Again">
+
+            <section class="try-theme-table">
+                <table>
+                    <tr>
+                        <td id="t0">Try other Themes:</td>
+                        <td id="t1" onclick="chooseTheme('default')">Default</td>
+                        <td id="t2" onclick="chooseTheme('space')">Space</td>
+                        <td id="t3" onclick="chooseTheme('tom')">Tom & Jerry</td>
+                        <td id="t4" onclick="chooseTheme('bears')">Three Bare Bears</td>
+                    </tr>
+                </table>
+            </section>
+        </section>
+    </main>
+    <footer>
+        Copyrights to Mohamed Omar Ibrahim Mahmoud - DECI Level 3 - Web Dev.
+    </footer>
+</body>
+</html>
