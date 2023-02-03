@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css?family=Inter");
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+    transition: 0.3s;
+}
+
+
+header{
+    margin-top: 5vh;
+    margin-bottom: 7vh;
+    display: flex;
+    justify-content: center;
+}
+
+.header-box{
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    display: flex;
+    width: 90vw;
+    min-height: fit-content;
+    border-radius: 20px;   
+    justify-content: center; 
+    align-items: center;
+}
+
+.header-title{
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 2rem;
+    padding: 0 2rem;
+}
+
+.header-img{
+    height: 80px;
+    object-fit: fill;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.login-box{
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    display: flex;
+    flex-direction: column;
+    width: 27vw;
+    height: fit-content;
+    border-radius: 20px;
+    justify-content: space-evenly; 
+    align-items: center;
+    margin-bottom: 2rem;
+    
+}
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.login-title{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin: 2rem 0;   
+}
+
+
+.login-input{
+    padding: 0.5rem 0.2rem;
+    border: none;
+    border-radius: 20px;
+    width: 100%;
+    margin: 1rem 0; 
+}
+
+.login-select{
+    padding: 0.5rem 0.1rem;
+    border: none;
+    border-radius: 20px;
+    width: 105%;
+    margin: 1rem 0; 
+}
+
+.login-submit{
+    padding: 0.5rem 0.3rem;
+    border: none;
+    opacity: 90%;
+    border-radius: 20px;
+    width: 100%;
+    height: 12%;
+    margin: 2rem 0;
+    transition: 0.3s;
+}
+
+.login-submit:hover{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.kidCalc-box{
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90vw;
+    height: fit-content;
+    border-radius: 20px;
+    margin: 0.8rem 0;
+}
+
+.information-box{
+    padding: 0.8rem 0;
+    width: 95%;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+}
+
+#info-name{
+    color: #500AA9;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+}
+
+#info-score{
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 1.25rem;
+}
+
+.calc-text-box{
+    margin-top: 0.8rem;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    align-items: center;
+}
+
+.calc-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    font-size: large;
+}
+
+.ans-box{
+    height: 50px;
+    padding: 0 1%;
+    border: none;
+    border-radius: 20px;
+    width: 20%;
+    font-size: large;
+}
+
+.opr-butt{
+    cursor: pointer;
+    border: none;
+    opacity: 90%;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+}
+
+.check-butt{
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    opacity: 90%;
+    border-radius: 20px;
+    width: 10%;
+}
+
+.clear-butt{
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    opacity: 90%;
+    border-radius: 20px;
+    width: 10%;
+}
+
+#butt-1{grid-area: butt1;} #butt-2{grid-area: butt2;} #butt-3{grid-area: butt3;}
+#butt-4{grid-area: butt4;} #butt-5{grid-area: butt5;} #butt-6{grid-area: butt6;}
+#butt-7{grid-area: butt7;} #butt-8{grid-area: butt8;} #butt-9{grid-area: butt9;}
+#butt-0{grid-area: butt0;}
+
+.calc-butt-box{
+    width: 20%;
+    height: 50%;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-template: 
+    'butt1 butt2 butt3'
+    'butt4 butt5 butt6'
+    'butt7 butt8 butt9'
+    '. butt0 .'
+    ;
+    row-gap: 15px;
+    column-gap: 20px;
+    margin-top: 2rem;
+
+}
+
+.num-butt{
+    cursor: pointer;
+    border: none;
+    opacity: 90%;
+    border-radius: 20px;
+    width: 50px;
+    height: 50px;
+    font-weight: bold;
+
+}
+
+
+.try-theme-table{
+    font-family: sans-serif;
+    font-weight: 550;
+    width: 95%;
+    display: flex;
+    align-self: center;
+}
+
+td{
+  padding: 2rem 1rem 1rem 0;
+  cursor: pointer;
+}
+
+footer{
+    display: none;
+    margin-top: 1vh;
+    justify-content: center;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+#great-job{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    height: 70vh;
+    display: none;
+}
+
+#try{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    height: 70vh;
+    display: none;
+    clip-path: circle(50%);
+    object-fit: cover;
+}
+
+
+@media only screen and (max-width: 450px){
+    .header-title{
+        font-size: 1.4rem;
+        padding: 0 0.1rem;
+    }
+    .header-box{
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 767px){
+
+    .information-box{
+        flex-direction: column;
+    }
+
+    #info-score{
+        margin: 0.3rem 0;
+    }
+
+    .ans-box{
+        font-size: small;
+        grid-area: ans-box;
+    }
+
+    
+    .calc-text-box{
+        width: 95%;
+        display: grid;
+    }
+
+    #inp-box-1{
+        grid-area: input1;
+    }
+    #plus{grid-area: plus} #minus{grid-area: minus} 
+    #less{grid-area: less} #greater{grid-area: greater}
+    #inp-box-2{
+        grid-area: input2;
+    }
+    #equal{grid-area: equal;}
+    .check-butt{grid-area: check;} .clear-butt{grid-area: clear;}
+    
+    .calc-text-box{
+        display: grid;
+        grid-template-areas: 
+        'input1 plus minus less greater input2'
+        '. . equal equal . .'
+        'ans-box ans-box ans-box ans-box ans-box ans-box'
+        'check check check clear clear clear'
+        ;
+        
+    }
+
+    .try-theme-table{
+        
+        font-size: smaller;
+    }
+
+    #equal{
+        min-width: 100%;
+        margin: 1rem 0;
+    }
+
+    .ans-box, .check-butt, .clear-butt{
+        width: 100%;
+        margin: 1rem 0;
+    }
+    
+
+    td{
+        padding: 2rem 0.5rem 1rem 0;
+    }
+
+    .login-box{
+        width: 90vw;
+    }
+    
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+    .ans-box{
+        font-size: small;  
+    }
+
+   
+    .calc-text-box{
+        width: 95%;
+    }
+
+    .login-box{
+        width: 40vw;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .ans-box{
+        font-size: medium;
+    }
+
+    .calc-text-box{
+        width: 85%;
+    }
+
+    .login-box{
+        width: 32vw;
+    }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .ans-box{
+        font-size: medium;
+    }
+
+}

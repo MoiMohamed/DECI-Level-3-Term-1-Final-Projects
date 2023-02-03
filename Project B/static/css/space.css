@@ -1,0 +1,67 @@
+html{
+    background: url(../images/space.webp) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+}
+
+
+.header-box, .login-box, .kidCalc-box{
+    background-color: rgba(7, 0, 27, 0.95);
+}
+
+.login-input, .login-select{
+    background-color: #875C7C;
+    
+}
+
+.header-title, .login-title, #info-name, #info-score{
+    color: #EBFFF7;
+}
+
+.calc-input, .ans-box, .ans-box::placeholder{
+    background-color: #875C7C;
+    color: white;
+}
+
+.login-submit, .opr-butt, .check-butt, .clear-butt, .num-butt{
+    background-color: #EBFFF7;
+    color: black;
+}
+
+.login-submit:hover, .opr-butt:hover, .check-butt:hover, .clear-butt:hover, .num-butt:hover{
+    background-color: #becfc9;
+}
+
+#t0{
+    color: white;
+}
+
+#t1{
+    color: white;
+}
+
+#t1:hover{
+    color: rgb(201, 199, 199);
+}
+
+
+#t2{
+    color: #875C7C;
+    font-weight: bolder;
+}
+
+#t3{
+    color: white;
+}
+
+#t3:hover{
+    color: rgb(201, 199, 199);
+}
+
+#t4{
+    color: white;
+}
+
+#t4:hover{
+    color: rgb(201, 199, 199);
+}

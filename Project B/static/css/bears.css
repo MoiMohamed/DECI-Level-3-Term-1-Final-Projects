@@ -1,0 +1,64 @@
+html{
+    background: url(../images/bears.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+}
+
+
+.header-box, .login-box, .kidCalc-box{
+    background-color: rgba(164, 92, 64, 0.8);
+}
+
+.login-input, .login-select{
+    background-color: #D9D9D9;
+}
+
+.header-title, .login-title, #info-name, #info-score{
+    color: black;
+}
+
+.calc-input, .ans-box{
+    background-color: #D9D9D9;
+}
+
+.login-submit, .opr-butt, .check-butt, .clear-butt, .num-butt{
+    background-color: #E4B7A0;
+    color: white;
+}
+
+.login-submit:hover, .opr-butt:hover, .check-butt:hover, .clear-butt:hover, .num-butt:hover{
+    background-color: #d3a994;
+}
+
+#t0{
+    color: black;
+}
+
+#t1{
+    color: black;
+}
+
+#t1:hover{
+    color: rgb(77, 77, 77);
+}
+
+#t2{
+    color: black;
+}
+
+#t2:hover{
+    color: rgb(77, 77, 77);
+}
+
+#t3{
+    color: black;
+}
+
+#t3:hover{
+    color: rgb(77, 77, 77);
+}
+
+#t4{
+    color: #F6EEE0;
+    font-weight: bolder;
+}
